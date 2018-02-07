@@ -25,6 +25,6 @@ fun example() = "13.06.1992".matches(getPattern().toRegex()) //true
 
 val month = "(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)"
 
-fun todoTask5(): String = """\d{2}\s*[A-Z]{3}\s*\d{4}"""
+fun todoTask5(): String = """\d{2}\s*(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)\s*\d{4}"""
 
 fun task5(): String = todoTask5()
